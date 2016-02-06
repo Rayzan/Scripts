@@ -1,7 +1,7 @@
 import os #alows you to execute os commands
 
 print("Would you like to update the system [y/n]:") 
-option = input()
+option = input().lower()
 if option == "y":
     print("Update started")
     os.system("sudo pacman -Syu && echo Done") 
